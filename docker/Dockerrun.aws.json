@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "hello-world",
+      "image": "314722698529.dkr.ecr.eu-central-1.amazonaws.com/beanstalk-example/hello-world:latest",
+      "essential": true,
+      "memory": 200,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 8000
+        }
+      ]
+    }
+  ]
+}

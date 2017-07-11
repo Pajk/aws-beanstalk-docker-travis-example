@@ -1,0 +1,26 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "Example usage of aws-beanstalk-docker-travis to build docker image and deploy it to AWS EB from Travis",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pajk/aws-beanstalk-docker-travis-example.git"
+  },
+  "author": "Pavel Pokorny",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "koa": "^2.3.0"
+  },
+  "engines": {
+    "node": "8.1.3"
+  }
+}

@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  test:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.test
+    image: beanstalk-example/hello-world:test
+    environment:
+      PORT: 3000
