@@ -3,16 +3,16 @@ language: node_js
 node_js: "8"
 services: docker
 
-install: git clone https://github.com/Pajk/aws-beanstalk-docker-travis.git devops-ci
+install: travis/install.sh
 
-script: ./devops-ci/travis/nodejs/script.sh
+script: travis/test.sh
 
 cache:
   directories: node_modules
 
 deploy:
   provider: script
-  script: devops-ci/travis/beanstalk/script.sh
+  script: travis/deploy.sh
   skip_cleanup: true
   on:
     branch: master
